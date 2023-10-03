@@ -6,49 +6,67 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 
-import json
+# import json
 
-from ansible_collections.community.routeros_objects.tests.unit.compat.mock import patch
-from ansible_collections.community.routeros_objects.plugins.modules import command
-from ansible_collections.community.routeros_objects.tests.unit.plugins.modules.utils import set_module_args
-from .routeros_module import TestRouterosObjectsModule, load_fixture
+# from ansible_collections.community.routeros_objects.tests.unit.compat.mock import patch
+# from ansible_collections.community.routeros_objects.plugins.modules import command
+# from ansible_collections.community.routeros_objects.tests.unit.plugins.modules.utils import set_module_args
+# from .routeros_objects_module import TestRouterosObjectsModule, load_fixture
 
 
-class TestRouterosObjectsScriptgenModule(TestRouterosObjectsModule):
+import unittest
 
-    module = command
+class AddTester(unittest.TestCase):
 
-    def setUp(self):
-        super(TestRouterosObjectsModule, self).setUp()
+    def SetUp():
+        self.a = 10
+        self.b = 23
 
-        # self.mock_run_commands = patch('ansible_collections.community.routeros_objects.plugins.modules.scriptgen.main')
-        self.run_commands = self.mock_run_commands.start()
+    # this function will
+    def test_add():
+      c = 33
+      assert self.a + self.b == c
 
-    def tearDown(self):
-        super(TestRouterosObjectsModule, self).tearDown()
-        self.mock_run_commands.stop()
+   # this function will
+    def test_subtract():
+      c = -13
+      assert self.a - self.b == c
 
-    def load_fixtures(self, commands=None):
+# class TestRouterosObjectsScriptgenModule(TestRouterosObjectsModule):
 
-        def load_from_file(*args, **kwargs):
-            module, commands = args
-            output = list()
+#     module = command
 
-            for item in commands:
-                try:
-                    obj = json.loads(item)
-                    command = obj
-                except ValueError:
-                    command = item
-                filename = str(command).replace(' ', '_').replace('/', '')
-                output.append(load_fixture(filename))
-            return output
+#     def setUp(self):
+#         super(TestRouterosObjectsModule, self).setUp()
 
-        self.run_commands.side_effect = load_from_file
+#         # self.mock_run_commands = patch('ansible_collections.community.routeros_objects.plugins.modules.scriptgen.main')
+#         self.run_commands = self.mock_run_commands.start()
 
-    def test_simple(self):
-        set_module_args(dict(commands=['asdfasdf']))
-        result = self.execute_module(changed=True)
-        self.assertEqual(len(result['stdout']), 1)
-        self.assertTrue('foo: "bar"' in result['stdout'][0])
+#     def tearDown(self):
+#         super(TestRouterosObjectsModule, self).tearDown()
+#         self.mock_run_commands.stop()
+
+#     def load_fixtures(self, commands=None):
+
+#         def load_from_file(*args, **kwargs):
+#             module, commands = args
+#             output = list()
+
+#             for item in commands:
+#                 try:
+#                     obj = json.loads(item)
+#                     command = obj
+#                 except ValueError:
+#                     command = item
+#                 filename = str(command).replace(' ', '_').replace('/', '')
+#                 output.append(load_fixture(filename))
+#             return output
+
+#         self.run_commands.side_effect = load_from_file
+
+#     def test_simple(self):
+#         set_module_args(dict(commands=['asdfasdf']))
+#         result = self.execute_module(changed=True)
+#         self.assertEqual(len(result['stdout']), 1)
+#         self.assertTrue('foo: "bar"' in result['stdout'][0])
 
