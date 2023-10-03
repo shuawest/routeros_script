@@ -1,0 +1,38 @@
+{
+    "targets": {
+        "scriptgen": {
+            "aliases": [
+                "context//", 
+                "context//scriptgen", 
+                "context/target/", 
+                "context/target/scriptgen", 
+                "module/", 
+                "module/scriptgen/", 
+                "module/scriptgen/scriptgen", 
+                "non_destructive/", 
+                "non_destructive/scriptgen", 
+                "posix/", 
+                "role/", 
+                "role/scriptgen", 
+                "scriptgen", 
+                "shippable/", 
+                "shippable/posix/", 
+                "shippable/posix/group1/", 
+                "shippable/posix/group1/scriptgen", 
+                "shippable/posix/scriptgen", 
+                "shippable/scriptgen", 
+                "skip/", 
+                "skip/python2.6/", 
+                "skip/python2.6/scriptgen"
+            ], 
+            "modules": [
+                "scriptgen"
+            ], 
+            "name": "scriptgen", 
+            "run_time_seconds": 4, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role"
+        }
+    }
+}

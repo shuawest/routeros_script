@@ -1,0 +1,21 @@
+---
+namespace: community
+name: routeros_objects
+version: 1.0.0
+readme: README.md
+authors:
+  - Josh West (github.com/shuawest)
+description: Modules for MikroTik RouterOS script generation
+license_file: COPYING
+tags:
+  - network
+  - mikrotik
+  - routeros
+# dependencies:
+#   ansible.netcommon: '>=1.0.0'
+repository": "https://github.com/shuawest/routeros_objects"
+documentation": "https://github.com/shuawest/routeros_objects/"
+homepage": "https://github.com/shuawest/routeros_objects"
+issues": "https://github.com/shuawest/routeros_objects/issues"
+build_ignore: []
+  

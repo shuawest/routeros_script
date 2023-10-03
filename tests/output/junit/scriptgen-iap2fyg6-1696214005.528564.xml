@@ -1,0 +1,720 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="1.34308719635009765625">
+	<testsuite disabled="0" errors="0" failures="0" name="scriptgen-iap2fyg6" skipped="0" tests="3" time="1.34308719635009765625">
+		<testcase classname="" name="[testhost] testhost: Gathering Facts" time="1.2353301048278809">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;ansible_all_ipv4_addresses&quot;: [
+&quot;192.168.86.29&quot;
+],
+&quot;ansible_all_ipv6_addresses&quot;: [
+&quot;fe80::aede:48ff:fe00:1122%en5&quot;,
+&quot;fe80::38f9:d3ff:fec4:aa7b%ap1&quot;,
+&quot;fe80::10b9:e0d6:6b0e:fc9e%en0&quot;,
+&quot;fdc2:2a62:706:48e6:ce:1a20:ffc1:5c1&quot;,
+&quot;fe80::6446:d3ff:fe51:c7d5%awdl0&quot;,
+&quot;fe80::6446:d3ff:fe51:c7d5%llw0&quot;,
+&quot;fe80::1b49:cc9d:2c8:9cd9%utun0&quot;,
+&quot;fe80::95a5:3e9e:6e1b:efd%utun1&quot;,
+&quot;fe80::131:f7c8:e46:8bbc%utun2&quot;,
+&quot;fe80::ce81:b1c:bd2c:69e%utun3&quot;,
+&quot;fe80::31d4:321c:7903:8f82%utun4&quot;
+],
+&quot;ansible_ap1&quot;: {
+&quot;device&quot;: &quot;ap1&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::38f9:d3ff:fec4:aa7b%ap1&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x5&quot;
+}
+],
+&quot;macaddress&quot;: &quot;3a:f9:d3:c4:aa:7b&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_apparmor&quot;: {
+&quot;status&quot;: &quot;disabled&quot;
+},
+&quot;ansible_architecture&quot;: &quot;x86_64&quot;,
+&quot;ansible_awdl0&quot;: {
+&quot;device&quot;: &quot;awdl0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::6446:d3ff:fe51:c7d5%awdl0&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x7&quot;
+}
+],
+&quot;macaddress&quot;: &quot;66:46:d3:51:c7:d5&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;status&quot;: &quot;active&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_bridge0&quot;: {
+&quot;device&quot;: &quot;bridge0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;82:1b:bb:81:88:01&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;Unknown&quot;,
+&quot;media_type&quot;: &quot;unknown type&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;RXCSUM&quot;,
+&quot;TXCSUM&quot;,
+&quot;TSO4&quot;,
+&quot;TSO6&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_date_time&quot;: {
+&quot;date&quot;: &quot;2023-10-01&quot;,
+&quot;day&quot;: &quot;01&quot;,
+&quot;epoch&quot;: &quot;1696214004&quot;,
+&quot;epoch_int&quot;: &quot;1696214004&quot;,
+&quot;hour&quot;: &quot;22&quot;,
+&quot;iso8601&quot;: &quot;2023-10-02T02:33:24Z&quot;,
+&quot;iso8601_basic&quot;: &quot;20231001T223324987671&quot;,
+&quot;iso8601_basic_short&quot;: &quot;20231001T223324&quot;,
+&quot;iso8601_micro&quot;: &quot;2023-10-02T02:33:24.987671Z&quot;,
+&quot;minute&quot;: &quot;33&quot;,
+&quot;month&quot;: &quot;10&quot;,
+&quot;second&quot;: &quot;24&quot;,
+&quot;time&quot;: &quot;22:33:24&quot;,
+&quot;tz&quot;: &quot;EDT&quot;,
+&quot;tz_dst&quot;: &quot;EDT&quot;,
+&quot;tz_offset&quot;: &quot;-0400&quot;,
+&quot;weekday&quot;: &quot;Sunday&quot;,
+&quot;weekday_number&quot;: &quot;0&quot;,
+&quot;weeknumber&quot;: &quot;39&quot;,
+&quot;year&quot;: &quot;2023&quot;
+},
+&quot;ansible_default_ipv4&quot;: {
+&quot;address&quot;: &quot;192.168.86.29&quot;,
+&quot;broadcast&quot;: &quot;192.168.86.255&quot;,
+&quot;device&quot;: &quot;en0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;gateway&quot;: &quot;192.168.86.1&quot;,
+&quot;interface&quot;: &quot;en0&quot;,
+&quot;macaddress&quot;: &quot;38:f9:d3:c4:aa:7b&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;netmask&quot;: &quot;255.255.255.0&quot;,
+&quot;network&quot;: &quot;192.168.86.0&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;status&quot;: &quot;active&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_default_ipv6&quot;: {},
+&quot;ansible_distribution&quot;: &quot;MacOSX&quot;,
+&quot;ansible_distribution_major_version&quot;: &quot;14&quot;,
+&quot;ansible_distribution_release&quot;: &quot;23.0.0&quot;,
+&quot;ansible_distribution_version&quot;: &quot;14.0&quot;,
+&quot;ansible_dns&quot;: {
+&quot;nameservers&quot;: [
+&quot;192.168.86.1&quot;
+],
+&quot;search&quot;: [
+&quot;lan&quot;
+]
+},
+&quot;ansible_domain&quot;: &quot;&quot;,
+&quot;ansible_effective_group_id&quot;: 20,
+&quot;ansible_effective_user_id&quot;: 501,
+&quot;ansible_en0&quot;: {
+&quot;device&quot;: &quot;en0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [
+{
+&quot;address&quot;: &quot;192.168.86.29&quot;,
+&quot;broadcast&quot;: &quot;192.168.86.255&quot;,
+&quot;netmask&quot;: &quot;255.255.255.0&quot;,
+&quot;network&quot;: &quot;192.168.86.0&quot;
+}
+],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::10b9:e0d6:6b0e:fc9e%en0&quot;,
+&quot;prefix&quot;: &quot;64&quot;
+},
+{
+&quot;address&quot;: &quot;fdc2:2a62:706:48e6:ce:1a20:ffc1:5c1&quot;,
+&quot;prefix&quot;: &quot;64&quot;
+}
+],
+&quot;macaddress&quot;: &quot;38:f9:d3:c4:aa:7b&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;status&quot;: &quot;active&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_en1&quot;: {
+&quot;device&quot;: &quot;en1&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;PROMISC&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;82:1b:bb:81:88:01&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;media_type&quot;: &quot;full-duplex&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;TSO4&quot;,
+&quot;TSO6&quot;,
+&quot;CHANNEL_IO&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_en2&quot;: {
+&quot;device&quot;: &quot;en2&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;PROMISC&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;82:1b:bb:81:88:00&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;media_type&quot;: &quot;full-duplex&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;TSO4&quot;,
+&quot;TSO6&quot;,
+&quot;CHANNEL_IO&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_en3&quot;: {
+&quot;device&quot;: &quot;en3&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;PROMISC&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;82:1b:bb:81:88:05&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;media_type&quot;: &quot;full-duplex&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;TSO4&quot;,
+&quot;TSO6&quot;,
+&quot;CHANNEL_IO&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_en4&quot;: {
+&quot;device&quot;: &quot;en4&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;PROMISC&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;82:1b:bb:81:88:04&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;media_type&quot;: &quot;full-duplex&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;TSO4&quot;,
+&quot;TSO6&quot;,
+&quot;CHANNEL_IO&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_en5&quot;: {
+&quot;device&quot;: &quot;en5&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::aede:48ff:fe00:1122%en5&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x4&quot;
+}
+],
+&quot;macaddress&quot;: &quot;ac:de:48:00:11:22&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_options&quot;: [
+&quot;full-duplex&quot;
+],
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;media_type&quot;: &quot;100baseT&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;status&quot;: &quot;active&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_env&quot;: {
+&quot;ANSIBLE_CALLBACKS_ENABLED&quot;: &quot;junit&quot;,
+&quot;ANSIBLE_COLLECTIONS_PATH&quot;: &quot;/Users/jowest/dev/repos/mikrotik&quot;,
+&quot;ANSIBLE_CONFIG&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ/tests/integration/integration.cfg&quot;,
+&quot;ANSIBLE_DEPRECATION_WARNINGS&quot;: &quot;false&quot;,
+&quot;ANSIBLE_DEVEL_WARNING&quot;: &quot;false&quot;,
+&quot;ANSIBLE_FORCE_COLOR&quot;: &quot;true&quot;,
+&quot;ANSIBLE_FORCE_HANDLERS&quot;: &quot;true&quot;,
+&quot;ANSIBLE_HOST_KEY_CHECKING&quot;: &quot;false&quot;,
+&quot;ANSIBLE_HOST_PATTERN_MISMATCH&quot;: &quot;error&quot;,
+&quot;ANSIBLE_INVENTORY&quot;: &quot;/dev/null&quot;,
+&quot;ANSIBLE_LIBRARY&quot;: &quot;/dev/null&quot;,
+&quot;ANSIBLE_PLAYBOOK_DIR&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ/tests/integration&quot;,
+&quot;ANSIBLE_PYTHON_INTERPRETER&quot;: &quot;/set/ansible_python_interpreter/in/inventory&quot;,
+&quot;ANSIBLE_PYTHON_MODULE_RLIMIT_NOFILE&quot;: &quot;1024&quot;,
+&quot;ANSIBLE_RETRY_FILES_ENABLED&quot;: &quot;false&quot;,
+&quot;ANSIBLE_ROLES_PATH&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ/tests/integration/targets&quot;,
+&quot;ANSIBLE_TEST_CI&quot;: &quot;&quot;,
+&quot;ANSIBLE_TEST_COVERAGE&quot;: &quot;&quot;,
+&quot;ANSIBLE_TEST_PYTHON_INTERPRETER&quot;: &quot;/Users/jowest/dev/apps/python-venv/ansible2.9/bin/python3&quot;,
+&quot;ANSIBLE_TEST_PYTHON_VERSION&quot;: &quot;3.9&quot;,
+&quot;ANSIBLE_WORKER_SHUTDOWN_POLL_COUNT&quot;: &quot;100&quot;,
+&quot;ANSIBLE_WORKER_SHUTDOWN_POLL_DELAY&quot;: &quot;0.1&quot;,
+&quot;HOME&quot;: &quot;/Users/jowest&quot;,
+&quot;INVENTORY_PATH&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ/tests/integration/inventory&quot;,
+&quot;JUNIT_OUTPUT_DIR&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/junit&quot;,
+&quot;JUNIT_REPLACE_OUT_OF_TREE_PATH&quot;: &quot;out-of-tree:&quot;,
+&quot;JUNIT_TASK_RELATIVE_PATH&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ&quot;,
+&quot;LC_ALL&quot;: &quot;en_US.UTF-8&quot;,
+&quot;OUTPUT_DIR&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/output_dir&quot;,
+&quot;PAGER&quot;: &quot;/bin/cat&quot;,
+&quot;PATH&quot;: &quot;/tmp/ansible-test-386y8rp5-injector:/tmp/python-m_45ftnt-ansible:/var/folders/kw/3v451xsd3r11r7npmmvwq5g80000gn/T/ansible-test-av0knr2d-bin:/Users/jowest/dev/apps/python-venv/ansible2.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/usr/local/munki:/opt/podman/bin:/Users/jowest/.cargo/bin&quot;,
+&quot;PWD&quot;: &quot;/Users/jowest/dev/repos/mikrotik/ansible_collections/community/routeros_objects/tests/output/.tmp/integration/scriptgen-j7d61muv-ÅÑŚÌβŁÈ/tests/integration&quot;,
+&quot;PYTHONPATH&quot;: &quot;/var/folders/kw/3v451xsd3r11r7npmmvwq5g80000gn/T/ansible-test-mi2nbnx5&quot;,
+&quot;SHLVL&quot;: &quot;2&quot;,
+&quot;SSH_AUTH_SOCK&quot;: &quot;/private/tmp/com.apple.launchd.wePGNSva4M/Listeners&quot;,
+&quot;_&quot;: &quot;/Users/jowest/dev/apps/python-venv/ansible2.9/bin/python3&quot;,
+&quot;__CF_USER_TEXT_ENCODING&quot;: &quot;0x1F5:0x0:0x0&quot;
+},
+&quot;ansible_fibre_channel_wwn&quot;: [],
+&quot;ansible_fips&quot;: false,
+&quot;ansible_fqdn&quot;: &quot;Joshs-MacBook-Pro&quot;,
+&quot;ansible_gif0&quot;: {
+&quot;device&quot;: &quot;gif0&quot;,
+&quot;flags&quot;: [
+&quot;POINTOPOINT&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1280&quot;,
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_hostname&quot;: &quot;Joshs-MacBook-Pro&quot;,
+&quot;ansible_hostnqn&quot;: &quot;&quot;,
+&quot;ansible_interfaces&quot;: [
+&quot;ap1&quot;,
+&quot;awdl0&quot;,
+&quot;bridge0&quot;,
+&quot;en0&quot;,
+&quot;en1&quot;,
+&quot;en2&quot;,
+&quot;en3&quot;,
+&quot;en4&quot;,
+&quot;en5&quot;,
+&quot;gif0&quot;,
+&quot;llw0&quot;,
+&quot;lo0&quot;,
+&quot;stf0&quot;,
+&quot;utun0&quot;,
+&quot;utun1&quot;,
+&quot;utun2&quot;,
+&quot;utun3&quot;,
+&quot;utun4&quot;
+],
+&quot;ansible_is_chroot&quot;: false,
+&quot;ansible_iscsi_iqn&quot;: &quot;&quot;,
+&quot;ansible_kernel&quot;: &quot;23.0.0&quot;,
+&quot;ansible_kernel_version&quot;: &quot;Darwin Kernel Version 23.0.0: Fri Sep 15 14:42:42 PDT 2023; root:xnu-10002.1.13~1/RELEASE_X86_64&quot;,
+&quot;ansible_llw0&quot;: {
+&quot;device&quot;: &quot;llw0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;BROADCAST&quot;,
+&quot;SMART&quot;,
+&quot;RUNNING&quot;,
+&quot;SIMPLEX&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::6446:d3ff:fe51:c7d5%llw0&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x8&quot;
+}
+],
+&quot;macaddress&quot;: &quot;66:46:d3:51:c7:d5&quot;,
+&quot;media&quot;: &quot;Unknown&quot;,
+&quot;media_select&quot;: &quot;autoselect&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;status&quot;: &quot;inactive&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_lo0&quot;: {
+&quot;device&quot;: &quot;lo0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;LOOPBACK&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [
+{
+&quot;address&quot;: &quot;127.0.0.1&quot;,
+&quot;broadcast&quot;: &quot;127.255.255.255&quot;,
+&quot;netmask&quot;: &quot;255.0.0.0&quot;,
+&quot;network&quot;: &quot;127.0.0.0&quot;
+}
+],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;::1&quot;,
+&quot;prefix&quot;: &quot;128&quot;
+},
+{
+&quot;address&quot;: &quot;fe80::1%lo0&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x1&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;16384&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;loopback&quot;
+},
+&quot;ansible_loadavg&quot;: {
+&quot;15m&quot;: 4.62548828125,
+&quot;1m&quot;: 2.14208984375,
+&quot;5m&quot;: 2.48828125
+},
+&quot;ansible_local&quot;: {},
+&quot;ansible_lsb&quot;: {},
+&quot;ansible_machine&quot;: &quot;x86_64&quot;,
+&quot;ansible_memfree_mb&quot;: 2100,
+&quot;ansible_memtotal_mb&quot;: 16384,
+&quot;ansible_model&quot;: &quot;MacBookPro15,1&quot;,
+&quot;ansible_nodename&quot;: &quot;Joshs-MacBook-Pro&quot;,
+&quot;ansible_os_family&quot;: &quot;Darwin&quot;,
+&quot;ansible_osrevision&quot;: &quot;199506&quot;,
+&quot;ansible_osversion&quot;: &quot;23A344&quot;,
+&quot;ansible_pkg_mgr&quot;: &quot;homebrew&quot;,
+&quot;ansible_processor&quot;: &quot;Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz&quot;,
+&quot;ansible_processor_cores&quot;: &quot;6&quot;,
+&quot;ansible_processor_vcpus&quot;: &quot;12&quot;,
+&quot;ansible_product_name&quot;: &quot;MacBookPro15,1&quot;,
+&quot;ansible_python&quot;: {
+&quot;executable&quot;: &quot;/Users/jowest/dev/apps/python-venv/ansible2.9/bin/python3&quot;,
+&quot;has_sslcontext&quot;: true,
+&quot;type&quot;: &quot;cpython&quot;,
+&quot;version&quot;: {
+&quot;major&quot;: 3,
+&quot;micro&quot;: 6,
+&quot;minor&quot;: 9,
+&quot;releaselevel&quot;: &quot;final&quot;,
+&quot;serial&quot;: 0
+},
+&quot;version_info&quot;: [
+3,
+9,
+6,
+&quot;final&quot;,
+0
+]
+},
+&quot;ansible_python_version&quot;: &quot;3.9.6&quot;,
+&quot;ansible_real_group_id&quot;: 20,
+&quot;ansible_real_user_id&quot;: 501,
+&quot;ansible_selinux&quot;: {
+&quot;status&quot;: &quot;Missing selinux Python library&quot;
+},
+&quot;ansible_selinux_python_present&quot;: false,
+&quot;ansible_service_mgr&quot;: &quot;launchd&quot;,
+&quot;ansible_ssh_host_key_dsa_public&quot;: &quot;AAAAB3NzaC1kc3MAAACBAJJRdo3bnBUWnzpzxzfmusYRGYlmhT5BL7/TETKZKdItIOoRmoyAdl3H7iqkN29rpiBeVkz0tIqL4BFlCi/Qhu3FN+N6ya1IlLus7cNlGOw/GOog2Xoto9WKPCd810lSdKaow3DQzcihG/dm0m4jfo1tVjlLBYmMN1N1nKzFPBDlAAAAFQCII6k2CVut+dO6dCOh+jHU4ByfTwAAAIAL46rTTRxkpT9Raw/KAFbyP98+pWFmD65ksN01deP1ZbemNIWPKuK0usPrvqFMMZ5qEzaq6CtpDkWyeKkr8EbyhmJCnsrvoE4xTr4FJrdp3jhGoZKaek7R4zjloxP9+MDq2lCxH33Pl7sDA/R747cGxIG7pP/Dd8qr3yCH1DO42AAAAIAgPj7hB4GcmC/XNiVI3b4eCBTWqAziVQk5mkUx4vdSU65Y3KLUCnLZ+cUKQWQce3Vri5xTlgevsLa1CCUE+jggdg1kUolEgC2rsnA6my4QNHh5/HqHMMWK0kNrgD4W8jkH1IIN4b8vPwuTv8z8xfjBiOoZ/DgGRJUZJNzXgmwCRg==&quot;,
+&quot;ansible_ssh_host_key_dsa_public_keytype&quot;: &quot;ssh-dss&quot;,
+&quot;ansible_ssh_host_key_ecdsa_public&quot;: &quot;AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJQTcWuspMBbUCdJoytnhj91xhmOzmE7hhYFgaIMJnJ1ZD0R065TX/q7lhaGdE5YMCyXRL+B3HhSOH8WlkhkpUU=&quot;,
+&quot;ansible_ssh_host_key_ecdsa_public_keytype&quot;: &quot;ecdsa-sha2-nistp256&quot;,
+&quot;ansible_ssh_host_key_ed25519_public&quot;: &quot;AAAAC3NzaC1lZDI1NTE5AAAAIBFA1BWOpHsp3r6tBiBQAbAErhA1Jj22Ufc23VABtwim&quot;,
+&quot;ansible_ssh_host_key_ed25519_public_keytype&quot;: &quot;ssh-ed25519&quot;,
+&quot;ansible_ssh_host_key_rsa_public&quot;: &quot;AAAAB3NzaC1yc2EAAAADAQABAAABgQDt3qC9tleX7O02U7kVGfgVny15e+b7O09BBWJxLyURhtLdzWZ87HKGeLLlPoBBTfOUgarViCjSikElI8x8PpQnw3fwO2ujTWT06hsqBhokIUY8cqLWcZwfJc0lLsO1z+ciqHTiLnvoyA1Kxlb3MiJ3jYjf1AFYQrHEqUNzdVlKWa370IQx3OPGzWwLSg73I68RhaFtYGRsP0w/Udr6jQ0Jo1cV79KPxPpX8fROAN8zTlKPyzdx+35M5BS90n5sCC3BgfpwS+1JtaPp5o04SfZDsQEYAIonuGYwSNTnBF7834sKUjGJTnqggh/IQVxYgv03963gFo6zZZyv2TodOKZu2VGCLbtSDfbuEjrpxwUg3zrJcQp+NpdhzA1+4Bhw4A8AjPNxzwgpwuqh/f4pIQzvgQ8FfOuKxdgmcWqqHGZb/w6LqOpCDjbGm5jtuLTUvnOs1nNh+qU+h1Xx75XBPEkef7CfXrX3ypcQ4mK6pvuVq34S8yPF/0Iy2oLb8ltCHz0=&quot;,
+&quot;ansible_ssh_host_key_rsa_public_keytype&quot;: &quot;ssh-rsa&quot;,
+&quot;ansible_stf0&quot;: {
+&quot;device&quot;: &quot;stf0&quot;,
+&quot;flags&quot;: [],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1280&quot;,
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_system&quot;: &quot;Darwin&quot;,
+&quot;ansible_system_capabilities&quot;: &quot;N/A&quot;,
+&quot;ansible_system_capabilities_enforced&quot;: &quot;N/A&quot;,
+&quot;ansible_uptime_seconds&quot;: 9363,
+&quot;ansible_user_dir&quot;: &quot;/Users/jowest&quot;,
+&quot;ansible_user_gecos&quot;: &quot;Josh West&quot;,
+&quot;ansible_user_gid&quot;: 20,
+&quot;ansible_user_id&quot;: &quot;jowest&quot;,
+&quot;ansible_user_shell&quot;: &quot;/bin/zsh&quot;,
+&quot;ansible_user_uid&quot;: 501,
+&quot;ansible_userspace_architecture&quot;: &quot;x86_64&quot;,
+&quot;ansible_userspace_bits&quot;: &quot;64&quot;,
+&quot;ansible_utun0&quot;: {
+&quot;device&quot;: &quot;utun0&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;POINTOPOINT&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::1b49:cc9d:2c8:9cd9%utun0&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0xe&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1500&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_utun1&quot;: {
+&quot;device&quot;: &quot;utun1&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;POINTOPOINT&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::95a5:3e9e:6e1b:efd%utun1&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0xf&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1380&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_utun2&quot;: {
+&quot;device&quot;: &quot;utun2&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;POINTOPOINT&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::131:f7c8:e46:8bbc%utun2&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x10&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;2000&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_utun3&quot;: {
+&quot;device&quot;: &quot;utun3&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;POINTOPOINT&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::ce81:b1c:bd2c:69e%utun3&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x11&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1000&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_utun4&quot;: {
+&quot;device&quot;: &quot;utun4&quot;,
+&quot;flags&quot;: [
+&quot;UP&quot;,
+&quot;POINTOPOINT&quot;,
+&quot;RUNNING&quot;,
+&quot;MULTICAST&quot;
+],
+&quot;ipv4&quot;: [],
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::31d4:321c:7903:8f82%utun4&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;0x12&quot;
+}
+],
+&quot;macaddress&quot;: &quot;unknown&quot;,
+&quot;mtu&quot;: &quot;1350&quot;,
+&quot;options&quot;: [
+&quot;PERFORMNUD&quot;,
+&quot;DAD&quot;
+],
+&quot;type&quot;: &quot;unknown&quot;
+},
+&quot;ansible_virtualization_role&quot;: &quot;&quot;,
+&quot;ansible_virtualization_tech_guest&quot;: [],
+&quot;ansible_virtualization_tech_host&quot;: [],
+&quot;ansible_virtualization_type&quot;: &quot;&quot;,
+&quot;gather_subset&quot;: [
+&quot;all&quot;
+],
+&quot;module_setup&quot;: true
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [],
+&quot;warnings&quot;: []
+}</system-out>
+		</testcase>
+		<testcase classname="tests/integration/targets/scriptgen/tasks/main.yml:15" name="[testhost] testhost: scriptgen : set_fact result={'msg': 'Unexpected end of string during escaped parameter'}" time="0.04908013343811035">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;result&quot;: {
+&quot;msg&quot;: &quot;Unexpected end of string during escaped parameter&quot;
+}
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="tests/integration/targets/scriptgen/tasks/main.yml:19" name="[testhost] testhost: scriptgen : Verify spscript generated that=['result.msg == &quot;Unexpected end of string during escaped parameter&quot;']" time="0.058676958084106445">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
