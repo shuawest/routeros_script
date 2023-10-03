@@ -10,7 +10,7 @@ source /Users/jowest/dev/apps/python-venv/ansible2.9/bin/activate
 
 # ansible-test coverage|env|shell|integration|network-integration|windows-integration|sanity|units
 ansible-test integration
-ansible-test units
+ansible-test units --python 3.9
 ```
 
 
@@ -34,6 +34,10 @@ ansible-test units
   
 - Ansible Workspace for routeros_script
   https://workspaces.openshift.com/f?url=https://github.com/shuawest/routeros_script
+
+- Molecule Getting Started
+  https://ansible.readthedocs.io/projects/molecule/getting-started/
+
 
 - https://docs.ansible.com/ansible/latest/dev_guide/developing_locally.html
 - Custom Modules and Plugins
