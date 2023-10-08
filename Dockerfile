@@ -33,7 +33,7 @@ RUN \
 
 ## Python 2.7 through 3.11
 RUN \ 
-    microdnf install -y python3.11 python3.10 python3.9 python3.8 python3.7 python3.6 python3.5 python2.7 && \
+    microdnf install -y python3.10 python3.9 python3.8 python3.7 python3.6 python2.7 && \
     microdnf clean all
 
 # nodejs 16 + VSCODE_NODEJS_RUNTIME_DIR are required on ubi9 based images
