@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: routeros_script_devspace
+  name: routeros_script_devspace2
 components:
   - name: tooling-container
     container:
