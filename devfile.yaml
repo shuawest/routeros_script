@@ -3,13 +3,25 @@ metadata:
   name: routeros_script_devspace2
 components:
   - name: tooling-container
-    container:
-      image: quay.io/devspaces/ansible-creator-ee@sha256:6b90971a0cf2c2fac5fdf30e8ae546eb1ea9edef02e1e809cbf8c48bd7693851
+    image: 
+      imageName: ansible-python-creator:latest
+      dockerfile:
+        uri: docker/Dockerfile
+        args: ['tail', '-f', '/dev/null']
+        buildContext: .
+        rootRequired: true
       memoryRequest: 384M
       memoryLimit: 8Gi
       cpuRequest: 250m
       cpuLimit: 2000m
-      args: ['tail', '-f', '/dev/null']
+  # - name: tooling-container
+  #   container:
+  #     image: quay.io/devspaces/ansible-creator-ee@sha256:6b90971a0cf2c2fac5fdf30e8ae546eb1ea9edef02e1e809cbf8c48bd7693851
+  #     memoryRequest: 384M
+  #     memoryLimit: 8Gi
+  #     cpuRequest: 250m
+  #     cpuLimit: 2000m
+  #     args: ['tail', '-f', '/dev/null']
 commands:
   - id: oc-install
     exec:
