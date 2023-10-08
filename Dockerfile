@@ -6,6 +6,8 @@ ENV HOME=/home/runner
 # install kubernetes module required by molecule
 RUN pip3 install kubernetes==26.1.0
 
+RUN echo "dockerfile worked" > test.txt
+
 ## kubectl
 RUN \
     microdnf install -y which && \
