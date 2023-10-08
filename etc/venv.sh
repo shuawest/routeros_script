@@ -37,6 +37,7 @@ python3 -m pip install pytest-html-reporter
 python3 -m pip install selenium
 python3 -m pip install python-dotenv
 
+/usr/local/opt/python@3.7/bin/python3.7 -m pip install --upgrade pip
 /usr/local/opt/python@3.7/bin/python3.7 -m pip install ansible==2.9 ansible-core pytest pytest-xdist unittest2 ordereddict pytest-forked python-dotenv    
 /usr/local/opt/python@3.7/bin/python3.7 -m pip install pytest-xdist
 /usr/local/opt/python@3.7/bin/python3.7 -m pip install pytest-forked 
@@ -50,8 +51,8 @@ python3 -m pip install python-dotenv
 /usr/local/opt/python@3.10/bin/python3.10 -m pip install --upgrade pip
 /usr/local/opt/python@3.10/bin/python3.10 -m pip install ansible-core pytest pytest-xdist unittest2 pytest-forked
 
-/usr/local/opt/python@3.10/bin/python3.11 -m pip install --upgrade pip
-/usr/local/opt/python@3.10/bin/python3.11 -m pip install ansible-core pytest pytest-xdist unittest2 pytest-forked
+/usr/local/opt/python@3.11/bin/python3.11 -m pip install --upgrade pip
+/usr/local/opt/python@3.11/bin/python3.11 -m pip install ansible-core pytest pytest-xdist unittest2 pytest-forked
 
 
 which ansible 
