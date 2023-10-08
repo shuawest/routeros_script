@@ -4,3 +4,9 @@
 
 unittest2 ; python_version <= '2.6'
 ordereddict ; python_version <= '2.6'
+ansible
+ansible-core
+pytest
+pytest-xdist
+pytest-forked
+python-dotenv

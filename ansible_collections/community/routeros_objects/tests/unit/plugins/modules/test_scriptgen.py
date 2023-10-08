@@ -16,21 +16,27 @@ __metaclass__ = type
 
 import unittest
 
-class AddTester(unittest.TestCase):
+def test_add():
+    a = 10
+    b = 23
+    c = 33
+    assert a + b == c
 
-    def SetUp():
-        self.a = 10
-        self.b = 23
+# class AddTester(unittest.TestCase):
 
-    # this function will
-    def test_add():
-      c = 33
-      assert self.a + self.b == c
+#     def SetUp():
+#         self.a = 10
+#         self.b = 23
 
-   # this function will
-    def test_subtract():
-      c = -13
-      assert self.a - self.b == c
+#     # this function will
+#     def test_add():
+#       c = 33
+#       assert self.a + self.b == c
+
+#    # this function will
+#     def test_subtract():
+#       c = -13
+#       assert self.a - self.b == c
 
 # class TestRouterosObjectsScriptgenModule(TestRouterosObjectsModule):
 
