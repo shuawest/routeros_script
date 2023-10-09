@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tooling-container
     container:
-      image: quay.io/jaydbyoo/pymodule-creator-ee:latest
+      image: quay.io/jaydbyoo/pymodule-creator-ee:0.1.0
       memoryRequest: 384M
       memoryLimit: 8Gi
       cpuRequest: 250m
