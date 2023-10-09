@@ -2,17 +2,9 @@ schemaVersion: 2.2.0
 metadata:
   name: routeros_script_devspace2
 components:
-  - name: tooling-image
-    image: 
-      imageName: ansible-python-creator:latest
-      dockerfile:
-        uri: docker/Dockerfile
-        args: ['tail', '-f', '/dev/null']
-        buildContext: .
-        rootRequired: true
   - name: tooling-container
     container:
-      image: ansible-python-creator:latest
+      image: quay.io/jaydbyoo/pymodule-creator-ee:latest
       memoryRequest: 384M
       memoryLimit: 8Gi
       cpuRequest: 250m
