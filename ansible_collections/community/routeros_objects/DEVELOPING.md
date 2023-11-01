@@ -45,3 +45,6 @@ ansible-test units --python 3.9
 - https://blog.toast38coza.me/custom-ansible-module-hello-world/
 - https://workspaces.openshift.com/f?url=https://github.com/devspaces-samples/ansible-devspaces-demo
   
+- Managing multiple versions of python on Linux
+  https://medium.datadriveninvestor.com/how-to-install-and-manage-multiple-python-versions-on-linux-916990dabe4b
+  

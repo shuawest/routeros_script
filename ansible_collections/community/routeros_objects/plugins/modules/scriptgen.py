@@ -21,19 +21,37 @@ EXAMPLES = '''
 
 import json
 from ansible.module_utils.basic import *
-import requests
+#import requests
+
+def get_argument_spec():
+    argument_spec = dict(
+        commands=dict(type='list', elements='dict', options={
+                'desc': dict(type='str', required=True),
+                'path': dict(type='str', required=True),
+                'state': dict(type='str', choices=['present','absent'], default='present'),
+                'values': dict(type='list', elements='dict', options={
+                    'attr': dict(type='str', required=True),
+                    'value': dict(type='str', required=True),
+                }),
+                'match': dict(type='list', elements='dict', options={
+                    'attr': dict(type='str', required=True),
+                    'value': dict(type='str', required=True),
+                }),
+                # consider merging values with match
+                #  use property to match, set, or both
+            },
+        )
+    )
+    return argument_spec
 
 def main():
-    fields = {
-        "commands": { "required": True, "type": "str" },
-    }
-    
-    module = AnsibleModule(argument_spec=fields)
+    argument_spec = get_argument_spec()
+    #module = AnsibleModule(argument_spec=argument_spec)
+    module = AnsibleModule(argument_spec=argument_spec, supports_check_mode=True)
 
     commands = module.params["commands"]
     result = {
-        "foo": "bar",
-        "cmds": commands,
+        "input": commands,
     }
 
     module.exit_json(changed=True, meta=result)
